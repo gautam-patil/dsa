@@ -8,11 +8,11 @@ function SecondlargestNumberInArray(arr) {
         if(arr[i]> largest){
             second = largest
             largest = arr[i]
-        }else if(arr[i] > second){
+        }else if(arr[i] > second && arr[i] != largest){
             second = arr[i]
         }
     }
     return second
 }
 
-console.log(SecondlargestNumberInArray([4, 2, 7, 1, 9, 10, 11])); // 9
+console.log(SecondlargestNumberInArray([4, 2, 7, 1, 9, 10, 11, 11])); // 9
